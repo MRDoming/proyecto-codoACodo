@@ -1,0 +1,124 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav,
+nav>div,
+header {
+    width: 100%;
+    min-height: 10vh;
+    background-color: rgb(62, 57, 57);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0rem !important;
+}
+
+li>a {
+    color: gray !important;
+}
+
+.logo {
+    width: 120px;
+    height: 100px;
+}
+
+.imagenPrincipal {
+    width: 100%;
+    height: 70vh;
+    background: url("./img/ba1.jpg"), rgba(0, 0, 0, 0.662);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.textoPrincipal {
+width: 50%;
+}
+
+.divPlaya {
+    flex-direction: row;
+}
+
+.imagenPlaya {
+    width: 50%;
+    height: 70vh;
+    background-image: url("./img/honolulu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.textoPlaya {
+    width: 50%;
+    height: 70vh;
+    background-color: rgb(62, 57, 57);
+}
+
+.textArea {
+    resize: none;
+}
+
+.botonEnviar {
+    background-color: rgb(50, 208, 50) !important;
+}
+
+footer {/*d-flex flex-row align-items-center justify-content-center justify-content-evenly*/
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgba(53, 53, 87, 0.897);
+}
+
+footer>a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 671px) and (max-width: 768px) {
+
+    .logo {
+        width: 104px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 671px) {
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .textoPrincipal {
+        width: 100%;
+    }
+
+    .divPlaya {
+        width: 100%;
+        min-height: 50vh;
+        flex-direction: column !important;
+    }
+
+    .imagenPlaya {
+        width: 100% !important;
+    }
+
+    .textoPlaya{
+        width: 100% !important;
+    }
+
+    footer {
+        flex-direction: column ;
+    }
+
+    footer>a {
+        margin-bottom: 5px;
+    }
+}
