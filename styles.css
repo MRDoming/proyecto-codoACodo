@@ -81,6 +81,18 @@ footer>a {
     text-decoration: none;
 }
 
+.botonTicket {
+    width: 50%;
+}
+
+.totalPagar {
+    background-color: rgba(80, 172, 252, 0.487);
+}
+
+main {
+    min-height: 78vh;
+}
+
 @media screen and (min-width: 671px) and (max-width: 768px) {
 
     .logo {
@@ -120,5 +132,11 @@ footer>a {
 
     footer>a {
         margin-bottom: 5px;
+    }
+
+
+
+    .descuentos {
+        justify-content: center;
     }
 }
